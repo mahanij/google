@@ -1,0 +1,98 @@
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-color: rgb(2, 2, 99);
+  overflow: hidden;
+}
+main .hero {
+  width: 80%;
+  height: 95%;
+  background-color: rgb(21, 5, 66);
+  border-radius: 20px;
+  box-shadow: -50px -10px 50px rgb(0, 0, 54);
+}
+main .hero .last-part .google {
+  margin: auto;
+  width: 80%;
+  height: 15%;
+  background-color: rgb(16, 0, 69);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  bottom: 300px;
+}
+main .hero .image {
+  float: right;
+  position: relative;
+  top: -350px;
+}
+main .hero .lorem {
+  width: 45%;
+  height: 50%;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+main .hero .lorem button.explore-more {
+  border: none;
+  border-radius: 30px;
+  width: 150px;
+  height: 45px;
+  background-color: rgb(17, 0, 111);
+  position: relative;
+  top: 10px;
+  left: 50px;
+  margin-right: 50px;
+}
+main .hero .lorem button.go-services {
+  border: none;
+  border-radius: 30px;
+  width: 150px;
+  height: 45px;
+  background-color: rgb(111, 0, 0);
+  position: relative;
+  top: 10px;
+  left: 50px;
+}
+main .hero header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+}
+main .hero header img {
+  width: 100px;
+  margin-right: 100px;
+}
+main .hero header nav {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+main .hero header nav button {
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(0, 0, 255);
+  position: relative;
+  top: -10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/*# sourceMappingURL=style.css.map */

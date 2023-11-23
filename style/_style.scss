@@ -1,0 +1,96 @@
+@mixin flex ($justify,$items){
+    justify-content: $justify ;
+    align-items: $items;
+}
+$width-height :100%;
+
+
+
+main{
+    height: $width-height;
+    width: $width-height ;
+    display: flex;
+    @include flex(space-evenly,flex-end);
+    background-color: rgb(2, 2, 99);
+    overflow: hidden;
+    .hero{
+        width: 80%;
+        height: 95%;
+        background-color: rgb(21, 5, 66);
+        border-radius: 20px;
+        box-shadow: -50px -10px 50px rgb(0, 0, 54);
+        .last-part{
+            .google{
+                margin: auto;
+                width: 80%;
+                height: 15%;
+                background-color: rgb(16, 0, 69);
+                border-radius: 10px;
+                display: flex;
+                @include flex(center,start );
+                position: relative;
+                bottom: 300px;
+            }
+        }
+        .image{
+            float: right;
+            position: relative;
+            top: -350px;
+        }
+        .lorem{
+            width: 45%;
+            height: 50%;
+            margin-left: 60px;
+            margin-top: 30px;
+            button.explore-more{
+                border: none;
+                border-radius: 30px;
+                width: 150px;
+                height: 45px;
+                background-color: rgb(17, 0, 111);
+                position: relative;
+                top: 10px;
+                left: 50px;
+                margin-right: 50px;
+            }
+            button.go-services{
+                border: none;
+                border-radius: 30px;
+                width: 150px;
+                height: 45px;
+                background-color: rgb(111, 0, 0);
+                position: relative;
+                top: 10px;
+                left: 50px;
+            }
+        }
+        header{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            @include flex(space-between,flex-start);
+            margin: 20px;
+            img{
+                width: 100px;
+                margin-right: 100px;
+            }
+            nav{
+                width: 80%;
+                height: 50%;
+                display: flex;
+                @include flex(space-evenly,flex-start);
+                margin-top: 30px;
+                button{
+                    border: none;
+                    border-radius: 20px;
+                    width: 100px;
+                    height: 30px;
+                    background-color: rgb(0, 0, 255);
+                    position: relative;
+                    top: -10px;
+                }
+            }
+        }
+    }
+    
+}
